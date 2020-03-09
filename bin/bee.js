@@ -5,7 +5,7 @@ const initTemplate = require('../packages/init-template/lib');
 const { version } = require('../package.json');
 // const deployStatic = require('../packages/deploy-static/lib');
 
-node 
+program 
     .version(version, '-v, --version')
     .description('-i, --init 生成指定的模板 （目前只有 react + typescript）')
     .usage('<command> [option]')
