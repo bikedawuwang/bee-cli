@@ -5,9 +5,9 @@
 ## Getting Started
 
 ```shell
-npm install -g bee-cli
+npm install -g honeybee-cli
 
-yarn global add bee-cli
+yarn global add honeybee-cli
 ```
 
 ## Future
