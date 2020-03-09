@@ -1,0 +1,45 @@
+{
+  "name": "bee-cli",
+  "version": "0.0.1",
+  "license": "MIT",
+  "bin": {
+    "jweboy-cli": "bin/bee.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bikedawuwang/bee-cli.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "eslint",
+    "typescript"
+  ],
+  "author": {
+    "name": "bikedawuwang",
+    "email": "710101991@qq.com"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^3.0.2",
+    "cross-spawn": "^7.0.1",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.0.0",
+    "jweboy-ssh-client": "^0.0.5",
+    "ora": "^4.0.3",
+    "yargs": "^15.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "lerna": "^3.18.3",
+    "prettier": "^1.15.3"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  }
+}
