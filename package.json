@@ -1,9 +1,9 @@
 {
   "name": "honeybee-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "bin": {
-    "jweboy-cli": "bin/bee.js"
+    "honeybee-cli": "bin/bee.js"
   },
   "repository": {
     "type": "git",
