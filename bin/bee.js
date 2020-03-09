@@ -5,8 +5,9 @@ const initTemplate = require('../packages/init-template/lib');
 const { version } = require('../package.json');
 // const deployStatic = require('../packages/deploy-static/lib');
 
-program
+node 
     .version(version, '-v, --version')
+    .description('-i, --init 生成指定的模板 （目前只有 react + typescript）')
     .usage('<command> [option]')
     .option('-i, --init', '生成指定的模板 （目前只有 react + typescript）', initTemplate)
     // FEATURE: 增加部署静态资源到服务器功能
