@@ -1,4 +1,4 @@
-# Bee-cli
+# Honeybee-cli
 
 一个可以提高开发效率的React脚手架，可以搭配 [Bumblebee](https://github.com/JimLiuxinghai/Bumblebee)食用，风味更佳！
 
