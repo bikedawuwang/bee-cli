@@ -29,9 +29,9 @@ function startInstallProcess(packageManager, projectName, appPath) {
     });
 
     installProcess.on('close', () => {
-      console.log(chalk.cyan('\n依赖包全部安装成功！\n'));
-      console.log(`现在你可以 ${chalk.cyan(`cd ${appPath}`)} 开始尽情的工作啦！\n`);
-      console.log(chalk.cyan('Enjoy coding.✌\n'));
+      console.log(chalk.cyan('\nAll dependent packages installed successfully！\n'));
+      console.log(`Now you can ${chalk.cyan(`cd ${appPath}`)} && Do your job!\n`);
+      console.log(chalk.cyan('Enjoy coding.\n'));
       resolve();
     });
   });
@@ -66,7 +66,7 @@ async function handleCurrentTypeDeps({ ruleType, packageManager, pkgCmd, appPath
   });
 
   installProcess.on('close', () => {
-    console.log(chalk.cyan(`\n ✌${ruleType}相关的规范依赖包全部安装成功!`));
+    console.log(chalk.cyan(`\n ✌${ruleType}All related specification dependency packages are installed successfully!`));
   });
 }
 
@@ -79,14 +79,14 @@ async function handleCurrentTypeDeps({ ruleType, packageManager, pkgCmd, appPath
  */
 async function donwloadGithubFiles({ templateName, projectName, appPath, packageManager, ruleType }) {
   try {
-    spinner = ora().start(`正在创建新项目！当前路径是 ${chalk.green(appPath)}`);
+    spinner = ora().start(`Creating new project! The current path is ${chalk.green(appPath)}`);
 
     // 下载模板文件
     await execAsync(`git clone ${GITHUB_URL}/${templateName} --depth=1 ${appPath}`);
 
     await spinner.stop();
-    await spinner.succeed(`目录创建成功! 当前路径为${chalk.green(`${appPath}\n`)}`);
-    console.log(`执行安装依赖包 ${chalk.cyan(`${packageManager} install`)}，需要等一会儿...\n`);
+    await spinner.succeed(`Directory created successfully! Current path is${chalk.green(`${appPath}\n`)}`);
+    console.log(`Execute installation dependency package ${chalk.cyan(`${packageManager} install`)}，Please wait patiently...\n`);
 
     const pkgCmd = `${packageManager}${isWindows ? WINDOWS_PACKAGE_MANAGER_SUFFIX : ''}`;
 
