@@ -24,8 +24,8 @@ module.exports = async function initTempalte() {
     try {
         const stat = await fs.stat(appPath);
         if (stat.isDirectory()) {
-            console.log(chalk.red('当前路径中存在同名目录\n'));
-            console.log(chalk.red('请重新命名目录名称或者删除同名目录'));
+            console.log(chalk.red('A directory with the same name exists in the current path\n'));
+            console.log(chalk.red('Please rename the directory or delete the directory with the same name'));
         }
     } catch (err) {
         donwloadGithubFiles({

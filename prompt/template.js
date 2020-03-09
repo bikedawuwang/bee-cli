@@ -11,19 +11,19 @@ module.exports = [
   {
     name: 'packageManager',
     type: 'list',
-    message: '请选择包管理器 (npm/yarn)',
+    message: 'Please select package manager (npm/yarn)',
     choices: ['yarn', 'npm'],
   },
   {
     name: 'templateName',
     type: 'list',
-    message: '请选择模版项目！',
+    message: 'Please select template item: ',
     choices: [BEE_BOILERPLATE, PROJECT_STARTER],
   },
   {
     name: 'projectName',
     type: 'input', 
-    message: '请输入项目名称！',
+    message: 'Please enter project name: ',
   },
   {
     name: 'ruleType',
