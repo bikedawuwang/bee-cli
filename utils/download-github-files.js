@@ -13,7 +13,7 @@ const util = require('util');
 const ora = require('ora');
 const chalk = require('chalk');
 const { isWindows } = require('./platform');
-const { GITHUB_URL, WINDOWS_PACKAGE_MANAGER_SUFFIX, NPM } = require('../contants/template');
+const { GITHUB_URL, WINDOWS_PACKAGE_MANAGER_SUFFIX, NPM, GITHUB_SERVER_URL } = require('../contants/template');
 const templateConfig = require('../config/template');
 
 let spinner;
@@ -80,9 +80,12 @@ async function handleCurrentTypeDeps({ ruleType, packageManager, pkgCmd, appPath
 async function donwloadGithubFiles({ templateName, projectName, appPath, packageManager, ruleType }) {
   try {
     spinner = ora().start(`Creating new project! The current path is ${chalk.green(appPath)}`);
-
+    let githubUrl = GITHUB_URL;
+    if (templateName === 'Bumblebee') {
+      githubUrl = GITHUB_SERVER_URL;
+    }
     // 下载模板文件
-    await execAsync(`git clone ${GITHUB_URL}/${templateName} --depth=1 ${appPath}`);
+    await execAsync(`git clone ${githubUrl}/${templateName} --depth=1 ${appPath}`);
 
     await spinner.stop();
     await spinner.succeed(`Directory created successfully! Current path is${chalk.green(`${appPath}\n`)}`);
