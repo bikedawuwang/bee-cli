@@ -87,7 +87,9 @@ async function donwloadGithubFiles({ templateName, projectName, appPath, package
     await spinner.stop();
     await spinner.succeed(`Directory created successfully! Current path is${chalk.green(`${appPath}\n`)}`);
     console.log(`Execute installation dependency package ${chalk.cyan(`${packageManager} install`)}，Please wait patiently...\n`);
-
+    
+    await execAsync(`rm -r -f ${appPath}/.git`);
+    
     const pkgCmd = `${packageManager}${isWindows ? WINDOWS_PACKAGE_MANAGER_SUFFIX : ''}`;
 
     // 开启 install 子进程
