@@ -9,7 +9,6 @@ module.exports = {
     GITHUB_SERVER_URL: 'https://github.com/JimLiuxinghai',
     BUMBLEBEE:'Bumblebee',
     BEE_BOILERPLATE: 'bee-boilerplate',
-    PROJECT_STARTER: 'project-starter',
     WINDOWS_PACKAGE_MANAGER_SUFFIX: '.cmd',
     NPM: 'npm',
     YARN: 'yarn',

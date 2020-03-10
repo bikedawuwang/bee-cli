@@ -28,6 +28,7 @@ module.exports = [
   {
     name: 'ruleType',
     type: 'list',
+    message: 'Please select eslint: ',
     choices: ['react', 'javascript'],
   },
 ];
