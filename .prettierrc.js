@@ -1,8 +1,8 @@
 /*
- * @Author: jweboy
- * @Date: 2019-12-03 16:18:35
- * @LastEditors: jweboy
- * @LastEditTime: 2019-12-04 11:20:11
+ * @Author: bikedawuwang
+ * @Date: 2020-03-10 16:09:00
+ * @LastEditors: bikedawuwang
+ * @LastEditTime: 2020-03-09 16:09:00
  */
 module.exports = {
   printWidth: 120, // 单行代码数量
