@@ -25,10 +25,10 @@ module.exports = [
     type: 'input', 
     message: 'Please enter project name: ',
   },
-  {
-    name: 'ruleType',
-    type: 'list',
-    message: 'Please select eslint: ',
-    choices: ['react', 'javascript'],
-  },
+  // {
+  //   name: 'ruleType',
+  //   type: 'list',
+  //   message: 'Please select eslint: ',
+  //   choices: ['react', 'javascript']
+  // },
 ];
