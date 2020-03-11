@@ -5,7 +5,7 @@
  * @LastEditTime: 2020-03-09 15:24:19
  */
 
-const { BEE_BOILERPLATE, BUMBLEBEE} = require('../contants/template');
+,const { BEE_BOILERPLATE, BUMBLEBEE, BUMBLEBEE_REACT} = require('../contants/template');
 
 module.exports = [
   {
@@ -18,7 +18,7 @@ module.exports = [
     name: 'templateName',
     type: 'list',
     message: 'Please select template item: ',
-    choices: [BEE_BOILERPLATE, BUMBLEBEE],
+    choices: [BEE_BOILERPLATE, BUMBLEBEE, BUMBLEBEE_REACT],
   },
   {
     name: 'projectName',
