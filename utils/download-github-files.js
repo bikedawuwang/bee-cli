@@ -81,7 +81,7 @@ async function donwloadGithubFiles({ templateName, projectName, appPath, package
   try {
     spinner = ora().start(`Creating new project! The current path is ${chalk.green(appPath)}`);
     let githubUrl = GITHUB_URL;
-    if (templateName === 'Bumblebee') {
+    if (templateName === 'Bumblebee' || templateName === 'Bumblebee-react') {
       githubUrl = GITHUB_SERVER_URL;
     }
     // 下载模板文件

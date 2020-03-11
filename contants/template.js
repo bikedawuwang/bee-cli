@@ -8,6 +8,7 @@ module.exports = {
     GITHUB_URL: 'https://github.com/bikedawuwang',
     GITHUB_SERVER_URL: 'https://github.com/JimLiuxinghai',
     BUMBLEBEE:'Bumblebee',
+    BUMBLEBEE_REACT: 'Bumblebee-react',
     BEE_BOILERPLATE: 'bee-boilerplate',
     WINDOWS_PACKAGE_MANAGER_SUFFIX: '.cmd',
     NPM: 'npm',
